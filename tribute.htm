@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribute Page</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          rgb(243, 26, 45, 0.5),
+          rgba(240, 151, 151, 0)
+        );
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
+      .grid_container {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-areas:
+          ". header ."
+          ". content ."
+          ". footer .";
+      }
+      header {
+        width: 100%;
+        grid-area: header;
+        background-image: linear-gradient(
+          60deg,
+          rgba(240, 151, 151, 0.8),
+          rgb(243, 26, 45),
+          rgba(240, 151, 151, 0.8)
+        );
+      }
+
+      img {
+        margin: 0;
+      }
+
+      .icon {
+        width: 40px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+      }
+
+      header #title {
+        position: relative;
+        color: white;
+        text-align: center;
+        font-size: 60px;
+        margin: auto;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      main {
+        grid-area: content;
+        position: relative;
+        margin-top: 10px;
+      }
+
+      #img-div {
+        background-image: linear-gradient(
+          -180deg,
+          rgb(0, 0, 0, 0.2),
+          rgb(0, 0, 0, 0.3)
+        );
+        padding-top: 20px;
+      }
+
+      main #img-div #image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: auto;
+      }
+
+      main #img-div #img-caption {
+        text-align: center;
+        padding: 10px;
+      }
+
+      .bio {
+        text-align: justify;
+        font-size: 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .facts {
+        text-align: justify;
+        background-color: rgb(0, 0, 0, 0.1);
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .link {
+        padding: 0 20px;
+      }
+      li {
+        padding: 5px;
+      }
+
+      h3,
+      h4 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      @media (max-width: 500px) {
+        header #title {
+          font-size: 40px;
+        }
+        .bio {
+          font-size: 12px;
+        }
+        .facts {
+          font-size: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid_container" id="main">
+      <header>
+        <h1 id="title">
+          Adolf <img class="icon" src="mi-647_022416122607.jpg" /> Hitler
+        </h1>
+      </header>
+      <main>
+        <figure id="img-div">
+          <img id="image" src="adolf.webp" />
+          <figcaption id="img-caption">
+            Adolf Hitler (1889–1945) was the leader of Germany during the Third
+            Reich (1933–1945).
+          </figcaption>
+        </figure>
+
+        <section id="tribute-info">
+          <p class="bio">
+            Adolf Hitler (1889–1945) was the leader of Germany during the Third
+            Reich (1933–1945). He was the primary instigator of both the Second
+            World War in Europe and the mass execution of millions of people
+            deemed to be "enemies," or inferior to the Aryan ideal. He rose from
+            being a talentless painter to the dictator of Germany and, for a few
+            months, emperor of much of Europe. His empire was crushed by an
+            array of the world's strongest nations; he killed himself before he
+            could be tried and brought to justice.
+          </p>
+          <ul class="facts">
+            <li style="list-style-type: none;">
+              <h3>Facts: Adolf hitler</h3>
+            </li>
+            <li>
+              <h4>Known For:</h4>
+              Leading the German Nazi party and instigating World War II
+            </li>
+            <li>
+              <h4>Born:</h4>
+              April 20, 1889 in Braunau am Inn, Austria
+            </li>
+            <li>
+              <h4>Parents:</h4>
+              Alois Hitler and Klara Poelzl
+            </li>
+            <li>
+              <h4>Died:</h4>
+              April 30, 1945 in Berlin, Germany
+            </li>
+            <li>
+              <h4>Published Works:</h4>
+              Mein Kampf
+            </li>
+            <li>
+              <h4>Notable Quote:</h4>
+              "In starting and waging a war it is not right that matters but
+              victory."
+            </li>
+          </ul>
+          <h3>
+            Source
+          </h3>
+          <p class="link bio">
+            Alan Bullock, Baron Bullock, et al.
+            <a
+              id="tribute-link"
+              href="https://www.britannica.com/"
+              target="_blank"
+              >“Adolf Hitler.”</a
+            >
+            Encyclopedia Britannica, Encyclopedia Britannica, Inc., 19 Dec.
+            2018.
+          </p>
+        </section>
+      </main>
+    </div>
+    <script>https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js</script>
+  </body>
+</html>
